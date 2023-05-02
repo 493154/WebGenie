@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGenie</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" integrity="sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+	 <div class="header" link rel="stylesheet" href="style.css">
+        <div class="logo"><a href="index.html">
+        WebGenie
+        </a></div>
+        <nav style="margin-right:10%;">
+            <ul>
+				
+                <li><a href="index.html">Home</a></li>
+				<li><a href="about us.html">About us</a></li>
+                <li><a href="#sportsNews">Sports</a></li>
+                <li><a href="#businessNews">Business</a></li>
+                <li><a href="#techNews">Technology</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+            <div class="bar">
+                <i class="open fa-solid fa-bars-staggered"></i>
+                <i class="close fa-solid fa-xmark"></i>
+            </div>
+        </nav>
+		</div>
+	
+    <div class="container" style="padding-left:27.5%; padding-right:27.5%; padding-bottom:6.1%;">
+
+		<div class="center"><h1 class="center" style="margin-bottom:7.5%; padding-top:120px">Search <i class="fa-solid fa-search"></i></h1></div>
+
+      
+      <form>
+          <center><div class="input-field">
+              <i class="material-icons prefix" style="font-size:1.5rem;">public</i>
+			  <input type="text" id="searchquery" style="width:90%; height:36px; font-size:18pt;">
+              <!--<input type="text" id="searchquery" style="width:90%; height:36px;">&nbsp&nbsp<i class="fa-solid fa-search"></i>-->
+              <label></label>
+          </div></center>
+          
+          <div class="row">
+             <input type="submit" id="searchbtn" class="fa-solid fa-search" value="search" style=" width:30%; margin-top:5%; margin-left:35%;">
+          </div>
+          
+      </form>
+      
+      <div id="loader" style="display:none;">
+        <div class="progress">
+          <div class="indeterminate"></div>
+        </div>
+      </div>
+      
+      <div class="row">
+         <div id="newsResults"></div>
+      </div>
+     </div>
+
+   
+
+<div class="footer" style="margin-top:12.18%;">
+        <div class="box">
+            <div class="left">
+                <div class="categories">
+                    <p>Categories</p>
+					<div>
+                        <p><a href="index.html">Home</a></p>
+                    </div>
+                    <div>
+                        <p>Sports</p>
+                    </div>
+                    <div>
+                        <p>Business</p>
+                    </div>
+                    <div>
+                        <p>Technology</p>
+                    </div>
+                </div>
+                <div class="contactUs">
+                    <div class="contact">
+                        <p>Contact Us</p>
+                        <div>Contact No. - <span>09174766106</span></div>
+                        <div>Email - <span>WebGenie@gmail.com</span></div>
+                        <div>Address - <span>Philippines</span></div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="newsletter">
+                    <p>Subscribe to WebGenie</p>
+                    <div class="email">
+                        <input type="email" placeholder="Enter Your Email Here" min="10" max="69">
+                        <button onclick="subscribe()">Subscribe</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script src="./index.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!--<script src="iconChanger.js"></script>-->
+<script src="search.js"></script>
+<script src="style.css"></script>
+
+  
+</body>
+</html>
